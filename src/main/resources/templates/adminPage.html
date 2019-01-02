@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title th:utext="${title}"></title>
+   </head>
+   <body>
+      <!-- Include _menu.html -->
+      <div style="border: 1px solid #ccc;padding:5px;margin-bottom:20px;">
+
+  <a th:href="@{/}">Home</a>
+
+     | &nbsp;
+
+   <a th:href="@{/userInfo}">User Info</a>
+
+     | &nbsp;
+
+   <a th:href="@{/admin}">Admin</a>
+
+     | &nbsp;
+
+   <a th:if="${#request.userPrincipal != null}" th:href="@{/logout}">Logout</a>
+
+</div>
+
+      <h2>Admin Page</h2>
+      <h3>Welcome :
+         <span th:utext="${#request.userPrincipal.name}"></span>
+      </h3>
+      <b>This is protected page!</b>
+
+      <br/><br/>
+
+      <div th:if="${userInfo != null}" th:utext="${userInfo}"></div>
+
+   </body>
+
+</html>
