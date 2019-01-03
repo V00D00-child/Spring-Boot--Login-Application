@@ -1,6 +1,6 @@
 # Spring-Boot-Login-Application
 
-Small login web app that connects to a MySQL database. When users have logged into the system, they are allowed to view only pages within their scope and role. If they access the protected pages located beyond their role, they will be denied.
+Small authentication app with login and access control using Spring Boot. When users have logged into the system, they can only view pages within their scope and role. If they try to access protected pages located beyond their role, they will be denied. Admin has access to all protected pages.
 
 ## Spring libraries used
 * Security
