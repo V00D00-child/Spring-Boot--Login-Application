@@ -12,7 +12,7 @@ https://yt-spring-login.herokuapp.com/
 
 ## Built With
 
-* [Spring Boot] (https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/) 
+* [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/) 
 * [Java](https://rometools.github.io/rome/)
 * [Maven](https://maven.apache.org)
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
